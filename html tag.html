@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <title>html tag 연습</title>
+
+  <style>
+    li {color: blue;
+        font-size: 20px;
+        border: 1px solid gray;
+        background-color:yellow;
+        width: 500px;
+        }
+    img {border: 5px solid green;}
+
+    table, tr, th, td {border: 1px solid gray;border-collapse: collapse;}
+  </style>
+
+</head>
+
+<body>
+
+  <ol>
+  <li>제목 태그입니다.</li>
+    <h1>h1 tag</h1>
+    <h2>h2 tag</h2>
+    <h3>h3 tag</h3>
+    <h4>h4 tag</h4>
+    <h5>h5 tag</h5>
+    <h6>h6 tag</h6>
+  <hr> 가로 구분선 hr tag
+
+  <li><a name='2'></a>줄바꿈 및 띄어쓰기 태그입니다.</li>
+    <p>p tag는 줄바꿈을 해줍니다.</p>
+    <p>p tag의 특징으로는 자동으로 margin값이 자동으로 삽입된다.</p>
+    <br>비슷한 태그로는 br tag가 있습니다. br tag는 p tag와 달리 종료태그가 붙지 않아 빈 태(empty tag)입니다.
+    <pre>pre tag는 작성된 텍스트의 모든 띄어쓰기와 줄 나누기는 웹 브라우저에 그대로 표현됩니다.
+      pre     tag</pre>
+  <hr> 가로 구분선 hr tag
+
+  <li>강조효과 태그입니다.</li>
+    <p><b>굵은 글씨</b>효과는 b tag입니다.</p>
+    <p>그러나 <strong>굵은 글씨와 중요함</strong>을 표시하고 싶다면 strong tag를 사용합니다.</p>
+    <p>또한, <i>기울기는</i> i tag를 사용합니다.</p>
+    <p>마찬가지로 <em>기울기와 중요함</em>을 표시하고 싶다면 em tag를 사용합니다.</p>
+    <p><del>중앙 가로줄은 del tag</del>이고, <ins>아래 가로줄은 ins tag</ins>이고, <mark>하이라이트는 mark tag</mark>입니다.</p>
+    <p>저는 개인적이로 이게 어려운대요.</p>
+    <p>위첨자는 sup<sup>tag</sup>이고, 아래첨자는 sub<sub>tag</sub>라고 합니다.</p>
+  <hr>
+
+  <li>인용구에 대한 태그입니다.</li>
+    <p>짧은 인용구는 quotation의 약자인 <q>q tag</q>입니다.</p>
+    <p>긴 인용구는 blockquote의 약자인</p> <blockquote>blockquote tag를 사용합니다. 이 태그는 인용부분을 별도 단락으로 구분해 p tag는 필요 없습니다.</blockquote>
+    <p>축약 문구는 <strong><abbr title="abbreviation">abbreviation</abbr></strong>의 약자인 abbr tag를 사용합니다.</p>
+    <address>주소는 address tag<br>를 사용하고, 기울기로 표시됩니다.</address>
+  <hr>
+
+  <li>주석에 대한 태그입니다.</li>
+    <p>이 태그는 안보일거에요. 왜냐하면 개발자가 코드 설명을 위해 작성해놓은 구문이라 웹페이지에서 보이지 않고, 소스에서만 보이거든요. 그리고 중첩사용은 안된다고 합니다.</p>
+    <!--열심히 공부 중이에요. 생각보다 어렵네요.-->
+  <hr>
+
+  <li>엔티티</li>
+    <p>엔티티는 어려워서 패스</p>
+  <hr>
+
+  <li>스타일 설정에 대한 태그입니다.</li>
+    <p>스타일 설정 문법은 <태그이름 style="속성이름:속성값">입니다.</p>
+    <p style="background-color:rgb(255,137,0)">글자의 배경색을 변경하려면 <태그이름 style='background-color:속성값(ex. blue 등)'> 태그를 사용합니다.</p>
+    <p style="color:#FFCC00">글자의 색을 변경하려면 <태그이름 style='color:속성값'> 태그를 사용합니다.</p>
+    <p style="font-size:20px">글자의 크기를 변경하려면 <태그이름 style='font-size:속성값(ex. 30px, 150% 등)'> 태그를 사용합니다.</p>
+    <p style="text-align:justify">글자의 정렬을 변경하려면 <태그이름 style='text-align:속성값(ex. center, left, justify 등)'> 태그를 사용합니다.</p>
+  <hr>
+
+  <li>링크 설정에 대한 태그입니다.</li>
+    <p>먼저, 링크 태그는 'a'입니다. 속성은 href(연결할 url 지정), taget(창을 실행시키는 방법), title(링크 위에 커서를 놓았을 때 붙는 설명)이 있습니다.</p>
+    <p><a href="1.html" title="html에 대한 설명입니다." target="_blank">html</a>에 대한 설명이 새 창'target=_blank'에서 열립니다.</p>
+    <p><a href="1.html" title="html에 대한 설명입니다." target="_self">html</a>에 대한 설명이 현재 창'target=_self'에서 열립니다.</p>
+    <p><a href="1.html" title="html에 대한 설명입니다." target="_parent">html</a>에 대한 설명이 부모 창'target=_parent'에서 열립니다.</p>
+    <p><a href="1.html" title="html에 대한 설명입니다." target="_top">html</a>에 대한 설명이 가장 상위 창'target=_top'에서 열립니다.</p>
+    <p><a href="#2">다시 2번으로!!</a></p>
+  <hr>
+
+  <li>이미지 삽입에 대한 태그입니다.</li>
+    <p>이미지를 삽입하는 태그는 'img'이고, empty tag입니다.</p>
+    <p>img태그 옆에 src속성은 이미가 저장된 URL주소를 명시하고, alt속성은 이미지가 로딩되지 않을 경우 대체되거나 시각장애인의 이해를 돕는 설명문입니다.<br>마지막으로 title속성은 이미지를 설명합니다.</p>
+    <p>또한, 사이즈를 조정하고자 한다면 width나 height속성으로 조정해줍니다. 나중에 css로 스타일을 적용해주는 것이 더욱 적절하다고 합니다.</p>
+    <p>이미지에 링크도 걸 수 있다고 하는데요! 앞에서 배운 것 처럼 a 태그를 이용하면 됩니다.</p>
+    <p><a href="1.html"><img src="css.jpg" alt="css와 관련 된 이미지입니다." title="css와 관련된 이미지" width="30%"></a></p>
+  <hr>
+
+  <li>표 삽입에 대한 태그입니다.</li>
+    <p>표를 삽입하는 태그는 table입니다. 'tr'은 열, 'th'은 열의 제목으로 자동으로 굵은 글씨와 가운데 정렬이 적용됩니다. 'td'는 을 각각 셀로 나눠준다고 합니다. 아래서 한 번 볼까요?</p>
+      <table style="width:80%">
+        <tr style="background-color:yellow"><th>동물</th><th>식물</th><th>곤충</th><th>어류</th></tr>
+        <tr style="text-align:center"><td>곰</td><td>장미</td><td>잠자리</td><td>고등어</td></tr>
+        <tr style="text-align:center"><td>강아지</td><td>수선화</td><td>개미</td><td>참돔</td></tr>
+        <tr style="text-align:center">><td>고양이</td><td>튤립</td><td>딱정벌레</td><td>방어</td></tr>
+      </table>
+    <p>셀 병합도 가능합니다. 열 병합 속성은 "colspan"이고, 행 병합 속성은 "rowspan"입니다. 문법은 <태그 속성="병합할 표 갯수">입니다.</p>
+    <p>또한, 'caption'태그를 이용하면 캡션도 달 수 있습니다.</p>
+      <table style="width:80%">
+        <caption style="background-color:gray; color:white"><strong>지구생물</strong></caption>
+        <tr style="background-color:yellow"><th>동물</th><th>식물</th><th colspan="2">기타</th></tr>
+        <tr style="text-align:center"><td>곰</td><td>장미</td><td>잠자리</td><td>고등어</td></tr>
+        <tr style="text-align:center"><td>강아지</td><td rowspan="2">수선화</td><td>개미</td><td>참돔</td></tr>
+        <tr style="text-align:center">><td>고양이</td><td>튤립</td><td>방어</td></tr>
+      </table>
+    <p>여기서 >표시는 왜 자꾸 표 위에 남는지 모르겠음...</p>
+
+</ol>
+</body>
+</html>
